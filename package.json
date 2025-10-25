@@ -17,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/rust": "^2.16.0",
+    "@parcel/watcher": "^2.5.1",
     "parcel": "^2.16.0"
   }
 }
