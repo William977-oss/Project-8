@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verkefni 8: Todolisti með viðmóti</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Todolisti</h1>
+      <p>Bættu við atriðum, kláraðu þau eða eyddu.</p>
+      <div class="todo-list" data-finished="shown">
+        <form action="." method="get" class="form">
+          <div class="input-group">
+            <label for="string">Verkefni:</label>
+            <input
+              type="text"
+              name="string"
+              id="string"
+              required
+              placeholder="Heiti verkefnis"
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit">Bæta við</button>
+        </form>
+
+        <p class="empty">Engin atriði til að sýna!</p>
+
+        <ul class="list hidden">
+          <!-- Atriði bætast við hér með JavaScript, fjarlægðu athugasemd til að sjá dæmi -->
+          <!--
+          <li class="finished">
+            <label>
+              <input type="checkbox" name="finished" checked />
+              <span class="item"
+                >Dæmi um atriði með löngum texta og orði sem er mjög langt
+                Vaðlaheiðarvegavinnuverkfærageymsluskúrslyklakippuhringurinn</span
+              >
+            </label>
+            <button title="Fjarlægja atriði">🗑️</button>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span class="item">Dæmi um atriði</span>
+            </label>
+            <button title="Fjarlægja atriði">🗑️</button>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span class="item">Dæmi um atriði</span>
+            </label>
+            <button title="Fjarlægja atriði">🗑️</button>
+          </li>
+          -->
+        </ul>
+        <div class="stats">
+          Kláruð: <span class="finished">0</span>, ókláruð:
+          <span class="unfinished">0</span>.
+        </div>
+        <div class="buttons">
+          <button class="toggle-finished">Fela kláruð atriði</button>
+          <button class="clear-all destructive" title="Hreinsa allan lista">
+            Hreinsa allan lista
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
